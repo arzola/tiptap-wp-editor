@@ -1,26 +1,26 @@
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 import eslintPluginReact from 'eslint-plugin-react';
-import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 import eslintPluginImport from 'eslint-plugin-import';
 import eslintRecommendedConfig from '@eslint/js';
 import prettierRecommendedConfig from 'eslint-config-prettier';
 
 export default [
-  // Include ESLint's recommended config
   eslintRecommendedConfig.configs.recommended,
-
-  // Include Prettier's recommended config
   prettierRecommendedConfig,
-
   {
-    files: ['**/*.{js,jsx,ts,tsx}'], // Target relevant file extensions
-    ignores: ['node_modules/**'], // Ignore unnecessary files
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    ignores: ['node_modules/**', 'dist/**/*'],
     languageOptions: {
       ecmaVersion: 'latest', // Use the latest ECMAScript features
       sourceType: 'module', // Enable ES Modules
       globals: {
         browser: true,
         node: true,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
       },
     },
     plugins: {
@@ -30,14 +30,14 @@ export default [
     },
     settings: {
       react: {
-        version: 'detect', // Automatically detect the version of React
+        version: 'detect',
       },
     },
     rules: {
-      // Prettier rules
       'prettier/prettier': ['error'],
-
       // React rules
+      'react/jsx-uses-react': 'off', // Not needed in React 17+
+      'react/react-in-jsx-scope': 'off', // Not needed in React 17+
       'react/jsx-no-constructed-context-values': 'error',
       'react/jsx-no-bind': ['warn', { allowArrowFunctions: true }],
       'react/jsx-key': 'error',
