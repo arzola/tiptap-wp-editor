@@ -1,0 +1,11 @@
+{
+  "js/tiptap-wp-editor.jsx": {
+    "file": "assets/main-inXX0z66.js",
+    "name": "main",
+    "src": "js/tiptap-wp-editor.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/main-CSMriF1D.css"
+    ]
+  }
+}
