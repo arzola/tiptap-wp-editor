@@ -1,15 +1,17 @@
-import eslintPluginPrettier from 'eslint-plugin-prettier';
-import eslintPluginReact from 'eslint-plugin-react';
-import eslintPluginImport from 'eslint-plugin-import';
-import eslintRecommendedConfig from '@eslint/js';
-import prettierRecommendedConfig from 'eslint-config-prettier';
+import eslintPluginPrettier from 'eslint-plugin-prettier'
+import eslintPluginReact from 'eslint-plugin-react'
+import eslintPluginImport from 'eslint-plugin-import'
+import eslintRecommendedConfig from '@eslint/js'
+import prettierRecommendedConfig from 'eslint-config-prettier'
 
 export default [
   eslintRecommendedConfig.configs.recommended,
   prettierRecommendedConfig,
   {
+    ignores: ['node_modules/', 'dist/', 'idea/', '.vscode/', '.git/'],
+  },
+  {
     files: ['**/*.{js,jsx,ts,tsx}'],
-    ignores: ['node_modules/**', 'dist/**/*'],
     languageOptions: {
       ecmaVersion: 'latest', // Use the latest ECMAScript features
       sourceType: 'module', // Enable ES Modules
@@ -46,4 +48,4 @@ export default [
       'import/no-anonymous-default-export': 'off',
     },
   },
-];
+]
