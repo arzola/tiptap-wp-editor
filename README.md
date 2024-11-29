@@ -4,7 +4,9 @@ The Real Gutenberg Alternative for serious writers.
 
 ## Description
 
-Tiptap is a WYSIWYG editor that is based on ProseMirror. It is a highly customizable editor that can be used with Vue.js, React, or plain JavaScript. It is a great alternative to Gutenberg for those who want a more minimalistic editor.
+Tiptap is a WYSIWYG editor that is based on ProseMirror. 
+It is a highly customizable editor that can be used with Vue.js, React, or plain JavaScript. 
+It is a great alternative to Gutenberg for those who want a more minimalistic editor.
 
 ## Features
 

@@ -5,7 +5,8 @@ import tailwindcssTypography from '@tailwindcss/typography'
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: ['./components/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
+  important: '.wp-tiptap-editor', // scope tailwind classes to the editor to avoid messing with the rest of the admin
+  content: ['./src/**/*.{ts,tsx}'],
   safelist: ['ProseMirror'],
   theme: {
     extend: {

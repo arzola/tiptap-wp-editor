@@ -27,8 +27,8 @@ function tiptap_enqueue_dynamic_assets($hook)
     $manifest = json_decode(file_get_contents($manifest_path), true);
 
     // Get the hashed JS and CSS filenames
-    $js_file = $manifest['js/tiptap-wp-editor.jsx']['file'] ?? '';
-    $css_file = $manifest['js/tiptap-wp-editor.jsx']['css'][0] ?? '';
+    $js_file = $manifest['src/tiptap-wp-editor.tsx']['file'] ?? '';
+    $css_file = $manifest['src/tiptap-wp-editor.tsx']['css'][0] ?? '';
 
     if ($js_file) {
         wp_enqueue_script(
@@ -55,10 +55,10 @@ add_action('admin_enqueue_scripts', 'tiptap_enqueue_dynamic_assets');
 function tiptap_replace_classic_editor()
 {
     ?>
-    <div id="tiptap-editor-root"></div>
-    <script>
-        document.querySelector('#postdivrich').style.display = 'none';
-    </script>
+  <div id="tiptap-editor-root"></div>
+  <script>
+    document.querySelector('#postdivrich').style.display = 'none'
+  </script>
     <?php
 }
 

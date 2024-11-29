@@ -8,32 +8,32 @@ export default [
   eslintRecommendedConfig.configs.recommended,
   prettierRecommendedConfig,
   {
-    ignores: ['node_modules/', 'dist/', 'idea/', '.vscode/', '.git/'],
+    ignores: ['node_modules/', 'dist/', 'idea/', '.vscode/', '.git/']
   },
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
-      ecmaVersion: 'latest', // Use the latest ECMAScript features
-      sourceType: 'module', // Enable ES Modules
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       globals: {
         browser: true,
-        node: true,
+        node: true
       },
       parserOptions: {
         ecmaFeatures: {
-          jsx: true,
-        },
-      },
+          jsx: true
+        }
+      }
     },
     plugins: {
       prettier: eslintPluginPrettier,
       react: eslintPluginReact,
-      import: eslintPluginImport,
+      import: eslintPluginImport
     },
     settings: {
       react: {
-        version: 'detect',
-      },
+        version: 'detect'
+      }
     },
     rules: {
       'prettier/prettier': ['error'],
@@ -45,7 +45,7 @@ export default [
       'react/jsx-key': 'error',
       'react/display-name': 'warn',
       // Import rules
-      'import/no-anonymous-default-export': 'off',
-    },
-  },
+      'import/no-anonymous-default-export': 'off'
+    }
+  }
 ]
