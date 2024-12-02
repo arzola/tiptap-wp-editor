@@ -32,7 +32,7 @@ It is a great alternative to Gutenberg for those who want a more minimalistic ed
 - [ ]  Read Refactoring UI to get some design tactics and build something good
 - [ ]  Map all the basic components and create tests and skeleon of each of those
 - [ ]  Define basic structure for the MVP elements, like b, s, underline, text formatting, alignment, code blocks, maybe custom html blocks
-- [ ]  Create clean PHP structure, double check how to use composer
+- [ ]  Create clean PHP structure, double check how to use composer properly on wp-plugins that will be distributed through zip files
 - [ ]  SlashCMD, bubble menu
 - [ ]  Save content
 - [ ]  Replicate classic editor current functionality to make it a drop-in replacement
