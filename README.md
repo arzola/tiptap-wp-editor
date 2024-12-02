@@ -36,7 +36,7 @@ It is a great alternative to Gutenberg for those who want a more minimalistic ed
 - [ ]  SlashCMD, bubble menu
 - [ ]  Save content
 - [ ]  Replicate classic editor current functionality to make it a drop-in replacement
-- [ ]  WP config to configure where to apply, collaborative features, maybe which plugins to enable.
+- [ ]  WP config to configure where to apply, collaborative features, maybe optional tiptap extensions.
 - [ ]  Parse current tinymce content and convert it to blocks (challenging)
 
 ## Features
