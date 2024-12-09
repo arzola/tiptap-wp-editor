@@ -19,11 +19,13 @@ It is a great alternative to Gutenberg for those who want a more minimalistic ed
 ### Brainstorm ideas
 
 - Incredible latex support with formulas rendered by default
-- Collaborative features using websockets (challenging) specially to have that working smoothly, I think this could be the monetization part on icode. (I need to double check tip tap licence), I also need to double check server security, auth, etc…
+- Collaborative features using websockets (challenging). (I need to double check tip tap licence), I also need to double check server security, auth, etc…
     - Transparent auth with backend using WP login
     - Find a way to work with revisions
 - Review which extensions are nice to be included by default
-- Full screen editor experience
+- Pleasant full screen editor experience
+- It should have strong support for most used embeds like Math formulas, Video, Images, Code Snippets
+- Provide a clean way to extend support for other embeds like H5P
 
 ### TODO first real MVP
 
@@ -45,7 +47,7 @@ It is a great alternative to Gutenberg for those who want a more minimalistic ed
 - Lightweight
 - Easy to use
 - Highly performant
-- Supports Markdown
+- Supports basic markdown
 - Supports HTML
 - Supports plain text
 - Supports images
