@@ -26,6 +26,7 @@ It is a great alternative to Gutenberg for those who want a more minimalistic ed
 - Pleasant full screen editor experience
 - It should have strong support for most used embeds like Math formulas, Video, Images, Code Snippets
 - Provide a clean way to extend support for other embeds like H5P
+- It should be accessible and easy to navigate for any user.
 
 ### TODO first real MVP
 
@@ -39,6 +40,7 @@ It is a great alternative to Gutenberg for those who want a more minimalistic ed
 - [ ]  Save content
 - [ ]  Replicate classic editor current functionality to make it a drop-in replacement
 - [ ]  WP config to configure where to apply, collaborative features, maybe optional tiptap extensions.
+- [ ]  First class accessibility 
 - [ ]  Parse current tinymce content and convert it to blocks (challenging)
 
 ## Features
